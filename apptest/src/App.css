@@ -1,0 +1,79 @@
+.App {
+  text-align: left;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.header{
+  background: linear-gradient(165deg, #085078, #85d8ce);
+  animation: Gradient infinite 20s linear;
+  background-size: 1600%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.App-header {
+  background: linear-gradient(165deg, #085078, #85d8ce, #085078);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  font-size: 20vmin;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  animation: Gradient infinite 20s linear;
+  background-size: 400%;
+}
+
+.google{
+  max-block-size: 3vmax;
+}
+
+.signin-button {
+  display: flex;
+  max-width: 15vw;
+  max-height: 20vh;
+  font-size: 1vmax;
+  margin-left: 15vw;
+  margin-top: 25vh;
+  align-items: center;
+  padding: 1vw;
+  border-radius: 100vmax;
+  justify-content: space-between;
+  border-width: 0px;
+}
+
+.link{
+  text-decoration: none;
+}
+
+.signin-button.hovered {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.box{
+  background-color: #ffffff;
+  margin-top: 5vh;
+  max-width: 45vw;
+  margin-left: 2.5vw;
+  min-height: 70Vh;
+  padding-top: 5vh;
+  padding-bottom: 15vh;
+  border-radius: 2.5vmax;
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+  background-position: 100% 50%
+  }
+  100% {
+  background-position: 0% 50%
+  }
+}

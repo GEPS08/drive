@@ -1,0 +1,69 @@
+.transparent-button {
+    position: relative;
+    border: none;
+    padding: 10px;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .background-image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+  }
+  
+  .background-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .text-overlay {
+    position: relative;
+    z-index: 1;
+    color: white; /* Adjust color as needed */
+  }
+  
+  .text-overlay span {
+    position: relative;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+    padding: 5px;
+    border-radius: 5px;
+    mask-image: url('./images/login_bg.jpg'); /* Replace with your image URL */
+    mask-position: center;
+    mask-repeat: no-repeat;
+    -webkit-mask-image: url('./images/login_bg.jpg');
+    -webkit-mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+  }
+
+.balls{
+  background-image: url('./images/login_bg.jpg');
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* Adjust image size and position */
+  background-size: 100vw;
+  background-position-x: -15vw;
+  background-position-y: -60vh;
+  font-size: 40vh;
+}
+
+.penis{
+    max-width: 50%;
+    min-height: 25vh;
+    text-align: center;
+    padding-top: 25vh;
+    background-color: white;
+    margin-left: 15vw;
+}
+
+.shaft{
+    background-image: url('./images/login_bg.jpg');
+}
