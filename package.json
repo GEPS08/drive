@@ -1,5 +1,14 @@
 {
   "dependencies": {
-    "react-native": "^0.75.1"
+    "react-native": "^0.75.1",
+    "react-scripts": "^5.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "server": "node ../servertest/server.js",
+    "dev": "concurrently \"npm run start\" \"npm run server\""
   }
 }
